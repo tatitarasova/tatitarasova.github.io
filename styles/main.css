@@ -14,15 +14,7 @@ BLACK: rgb(15, 15, 15)
 body {
     font-family: Georgia;
     background-color: #fdfdfd;
-}
-
-.container {
-    background-image: url('/images/oksana-foto.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    height: 500px;
-    width: 100%;
+    padding: 2% 6% 6% 6%;
 }
 
 img {
@@ -45,6 +37,67 @@ a:link {
     a:active {
         color: rgb(252, 217, 142);  
     }
+
+/* ---------------------------------------------------
+                MAIN NAVIGATION STYLES
+----------------------------------------------------*/
+
+.main-navigation ul {
+    padding-left: 0;
+}
+
+.main-navigation li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(67, 67, 67, 0.17);
+    color: rgb(180, 180, 180);
+}
+
+#logo-list {
+    display: none;
+}
+
+/* ---------------------------------------------------
+                   HOME PAGE STYLES
+----------------------------------------------------*/
+.landing-info-container {
+    background-image: url('../images/oksana-foto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    background-position: right;
+    height: 500px;
+    width: 100%;
+}
+
+.intro-text-container {
+    float: left;
+    width: 300px;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.intro-text-container p {
+    font-size: 140%;
+    background-color: rgba(226, 226, 226, 0.51);
+}
+
+.featured-info h2 {
+    border-bottom: 1px solid rgb(128,128,128); 
+}
+
+.featured-info ul {
+    list-style: none;
+    padding: 0;
+}
 
 /* ---------------------------------------------------
                 GLOBAL FOOTER STYLES
