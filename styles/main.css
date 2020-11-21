@@ -19,6 +19,12 @@ body {
     padding: 2% 6% 6% 6%;
 }
 
+@media screen and (min-width: 750px){
+    body {
+        font-size: 1.4em;
+    }
+}
+
 a:link {
     color: rgb(172, 140, 71);
 }
@@ -135,6 +141,14 @@ a:link {
     max-width: 100%;
     margin-left: auto;
 }
+
+@media screen and (min-width: 500px){
+    .hero-image {
+        max-width: 450px;
+    }
+}
+
+/* media query for 500px */
 
 .hero-text {
     letter-spacing:2px;
