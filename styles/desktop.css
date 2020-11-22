@@ -1,0 +1,30 @@
+/* -------------------------------------------------
+                     COLOUR GUIDE
+
+GOLD: rgb(172, 140, 71);
+WHITE: rgb(226, 226, 226);
+BLACK: rgb(46, 46, 46);
+       rgb(15, 15, 15);
+       rgba(15, 15, 15, 0.74);
+
+-------------------------------------------------- */
+
+@media only screen and (min-width: 1140px) {
+
+	header, nav, .row, footer {
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+
+	nav ul li a {
+		transition: background .3s linear;	
+	}
+	
+	nav ul li a:hover {
+		background-color: rgb(75, 75, 75);;
+		
+	}
+	
+	nav ul link
+
+} /*end of the media query */
