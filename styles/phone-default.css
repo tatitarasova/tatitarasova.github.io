@@ -1,5 +1,4 @@
-/* -------------------------------------------------
-                     COLOUR GUIDE
+/* ---    COLOUR GUIDE
 
 GOLD: rgb(172, 140, 71);
 WHITE: rgb(226, 226, 226);
@@ -7,67 +6,59 @@ BLACK: rgb(46, 46, 46);
        rgb(15, 15, 15);
        rgba(15, 15, 15, 0.74);
 
--------------------------------------------------- */
+----*/
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*-- apply a natural box layout model to all elements --*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 /*-----BODY -----*/
+
 body {
-	font-size: 16px;
-	font-family: Georgia, serif;
-	font-weight: 400;	/*also loaded 600 and 700 for headers and bold*/
-	padding: 2% 6% 6% 6%;
-	background-color: #fdfdfd;
+    font-size: 19px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    /*also loaded 600 and 700 for headers and bold*/
+    color: rgb(226, 226, 226);
+    padding: 2% 6% 6% 6%;
+    background-color: rgb(15, 15, 15)
 }
 
+/*-------- NAVIGATION STUFF HERE ------*/
 
-/*-----HEADER -----*/
-#header-wrapper {
-	background-color: rgb(46, 46, 46);
-}
-
-header {
-	padding: 1em 2% .5em 2%;
-	text-align: center;
-}
-
-header h1 {
-	font-size: 1.9em;
-	color: rgb(226, 226, 226);
-}
-
-/*-------- NAVIGATION STUFF HERE -------------------*/
 #nav-wrapper {
-	
+    background-color: rgb(46, 46, 46);
 }
 
 nav ul {
-	padding: 1em 0;
+    padding: .8em;
 }
 
-nav ul li {
-	margin: 0 2%;
-	width: 46%;
-	float: left;
-}
+nav ul li {}
 
 nav ul li a {
-	display: block;
-	text-align: center;
-	font-weight: 400;
-	font-size: 1.5em;
-	text-decoration: none;
-	color: rgb(226, 226, 226);
-	background-color: rgb(46, 46, 46);
-	margin: .2em 0;
-	padding: .6em 0;
-	border-radius: .7em;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(226, 226, 226);
 }
 
-/* ---------------------------------------------------
-                FEATURED SECTION STYLES
-----------------------------------------------------*/
+/* -- HERO IMAGE STYLES ---------*/
+
+#hero-image {
+    background-image: url("../images/hero-foto-phone.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(226, 226, 226);
+    height: 676px;
+}
+
+/* --- FEATURED SECTION STYLES ----*/
 
 .row h2 {
     border-bottom: 1px solid rgb(128, 128, 128);
@@ -78,22 +69,19 @@ nav ul li a {
     padding: 0;
 }
 
-/* ---------------------------------------------------
-                GLOBAL FOOTER STYLES
-----------------------------------------------------*/
+/* ----- GLOBAL FOOTER STYLES -----------------*/
 
 #footer-wrapper {
-	background-color: rgb(46, 46, 46);
+    background-color: rgb(46, 46, 46);
 }
 
 footer {
-	text-transform: uppercase;
-	margin: 0;
-	clear: both;
-	font-size: .8em;
-	text-align: center;
-	padding: .6em;
-	color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    clear: both;
+    font-size: .8em;
+    text-align: center;
+    padding: .6em;
 }
 
 
@@ -101,7 +89,7 @@ footer {
 
 /* ----- OTHER STUFF ----*/
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
