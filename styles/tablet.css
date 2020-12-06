@@ -9,23 +9,18 @@ BLACK: rgb(46, 46, 46);
 
 -------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 641px) {
+
+	/* -- HERO IMAGE STYLES ---------*/
+	#hero-image {
+		background-image: url("../images/piano-tablet.jpg");
+		height: 400px;
+	}
 
     /* NAVIGATION HERE */
 
-    nav ul {
-        padding: 0;
-        margin-left: 2%;
-    }
-
-    nav ul li {
-        width: auto;
-        margin: 0;
-    }
-
     nav ul li a {
         /* add tablet effects */
-        padding: 1em 1.5em;
         font-weight: 600;
         font-size: 1.2em;
     }
