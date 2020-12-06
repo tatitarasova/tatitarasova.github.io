@@ -64,6 +64,7 @@ header h2 {
 
 #nav-wrapper {
     background-color: rgb(15, 15, 15);
+    width: auto;
 }
 
 nav ul {
