@@ -22,7 +22,7 @@ body {
     width: 100%;
     max-width: 1200px;
     /*in viewports above 1200px, the body remains at 1200px and centers itself in the available space*/
-    font-size: 19px;
+    font-size: 16px;
     font-family: Georgia, serif;
     font-weight: 400;
     /*also loaded 600 and 700 for headers and bold*/
@@ -33,31 +33,31 @@ body {
 
 /*-------- HEADER ------*/
 #header-wrapper {
-	background-color: rgb(226, 226, 226);
-	color: rgb(46, 46, 46);
+    background-color: rgb(226, 226, 226);
+    color: rgb(46, 46, 46);
 }
 
 header {
-	padding: 1em 2% .5em 2%;
+    padding: 1em 2% .5em 2%;
 }
 
 header h1 {
-	font-size: 2.1em;	
+    font-size: 2.1em;
 }
 
 header h2 {
-	font-size: 1.5em;
-	font-style: italic;
-	margin-top: .45em;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: .45em;
 }
 
 /* -- HERO IMAGE STYLES ---------*/
 
 #hero-image {
-    background-image: url("../images/piano-phone.jpg");
-	background-repeat: no-repeat;
-	background-color: rgb(226, 226, 226);
-	height: 200px;
+    background-image: url("../images/glasses-phone.jpg");
+    background-repeat: no-repeat;
+    background-color: rgb(226, 226, 226);
+    height: 200px;
 }
 
 /*-------- NAVIGATION STUFF HERE ------*/
@@ -71,22 +71,24 @@ nav ul {
 }
 
 nav ul li {
-	float: left;
-	width: 25%;
+    float: left;
+    width: 25%;
 }
 
 nav ul li a {
     display: block;
     text-align: center;
     font-weight: 400;
-	color: rgb(226, 226, 226);
+    color: rgb(226, 226, 226);
     font-size: 1.3em;
     text-decoration: none;
-	margin: .6em 0;
-	border-right: 2.5px solid rgb(128, 128, 128);
+    margin: .6em 0;
+    border-right: 2.5px solid rgb(128, 128, 128);
 }
 
-nav ul li:last-child a {border-right: none;}
+nav ul li:last-child a {
+    border-right: none;
+}
 
 /* --- CONTENT STYLES ----*/
 
