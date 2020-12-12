@@ -10,36 +10,44 @@ BLACK: rgb(46, 46, 46);
 -------------------------------------------------- */
 
 @media only screen and (min-width: 1140px) {
-	
-	/* HERO IMAGE */
-	#hero-image {
-		background-image: url("../images/glasses-desktop.jpg");
-		height: 500px;
-		background-position: center;
-	}
 
-	/*-----INSIDE THE WRAPPERS-----*/
-	header, nav, .row, footer {
-		max-width: 1140px;
-		margin: 0 auto; /*centers everything on the page;*/
-	}
-	
-	/*----- HEADER -----*/
-	header {
-		padding-top: 2em;
-		padding-bottom: 1em;
-	}
+    /* HERO IMAGE */
+    #hero-image {
+        background-image: url("../images/boy-playing-piano-desktop.jpg");
+        height: 500px;
+        background-position: center;
+    }
 
-	/*----- NAVIGATION ---*/
-	nav ul li {width: auto;}
-	
-	nav ul li a {
-		transition: background .3s linear;	
-		padding: .2em 1.5em;	
-	}
-	
-	nav ul li a:hover {
-		background-color: rgb(75, 75, 75);
-	}
+    /*-----INSIDE THE WRAPPERS-----*/
+    header,
+    nav,
+    .row,
+    footer {
+        max-width: 1140px;
+        margin: 0 auto;
+        /*centers everything on the page;*/
+    }
 
-} /*end of the media query */
+    /*----- HEADER -----*/
+    header {
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+
+    /*----- NAVIGATION ---*/
+    nav ul li {
+        width: auto;
+    }
+
+    nav ul li a {
+        transition: background .3s linear;
+        padding: .2em 1.5em;
+    }
+
+    nav ul li a:hover {
+        background-color: rgb(75, 75, 75);
+    }
+
+}
+
+/*end of the media query */

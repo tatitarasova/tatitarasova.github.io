@@ -11,11 +11,11 @@ BLACK: rgb(46, 46, 46);
 
 @media only screen and (min-width: 641px) {
 
-	/* -- HERO IMAGE STYLES ---------*/
-	#hero-image {
-		background-image: url("../images/glasses-tablet.jpg");
-		height: 400px;
-	}
+    /* -- HERO IMAGE STYLES ---------*/
+    #hero-image {
+        background-image: url("../images/boy-playing-piano-tablet.jpg");
+        height: 400px;
+    }
 
     /* NAVIGATION HERE */
 
