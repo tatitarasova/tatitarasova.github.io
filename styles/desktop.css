@@ -48,6 +48,15 @@ BLACK: rgb(46, 46, 46);
         background-color: rgb(75, 75, 75);
     }
 
+    main {
+        display: flex;
+    }
+
+    .columns-desktop {
+        display: flex;
+        flex: 1;
+    }
+
 }
 
 /*end of the media query */

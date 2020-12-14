@@ -16,7 +16,7 @@ BLACK: rgb(46, 46, 46);
     box-sizing: border-box;
 }
 
-/*-----BODY -----*/
+/*----- BODY (GLOBAL?) STYLES -----*/
 
 body {
     width: 100%;
@@ -31,6 +31,11 @@ body {
     background-color: rgb(15, 15, 15)
 }
 
+h1 {
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+
 /*-------- HEADER ------*/
 #header-wrapper {
     background-color: rgb(226, 226, 226);
@@ -43,6 +48,7 @@ header {
 
 header h1 {
     font-size: 2.1em;
+    margin: 0;
 }
 
 header h2 {
@@ -90,21 +96,74 @@ nav ul li:last-child a {
     border-right: none;
 }
 
-/* --- CONTENT STYLES ----*/
+/* --- MAIN STYLES ----*/
 
-.row h2 {
-    border-bottom: 1px solid rgb(128, 128, 128);
+main {
+    display: block;
+    background-color: rgb(226, 226, 226);
+
+    padding-top: 2em;
+    padding-bottom: 2em;
+    min-height: 85%;
+    /*makes sure that the bottom navigation shows up at the bottom of the page */
+
 }
 
-.row ul {
-    list-style: none;
-    padding: 0;
+article {
+    padding: 2em;
+    width: 95%;
+    border-bottom: 2px solid rgb(172, 140, 71);
+    margin-left: auto;
+    margin-right: auto;
 }
+
+article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em 0 1em 0;
+    text-transform: uppercase;
+    color: rgb(46, 46, 46);
+}
+
+/*----- MATERIALS STYLES ----------------------*/
+
+.teaching-material {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgb(46, 46, 46);
+}
+
+.teaching-material img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.teaching-material .title {
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    color: rgb(46, 46, 46);
+
+}
+
+.teaching-material .desc {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-style: italic;
+    min-height: 35%;
+}
+
+.teaching-material a {
+    color: rgb(172, 140, 71);
+}
+
 
 /* ----- GLOBAL FOOTER STYLES -----------------*/
 
 #footer-wrapper {
     background-color: rgb(46, 46, 46);
+    padding: 1em;
 }
 
 footer {
@@ -115,8 +174,6 @@ footer {
     text-align: center;
     padding: .6em;
 }
-
-
 
 
 /* ----- OTHER STUFF ----*/
