@@ -31,13 +31,10 @@ BLACK: rgb(46, 46, 46);
     /*----- HEADER -----*/
     header {
         padding-top: 2em;
-        padding-bottom: 1em;
+        padding-bottom: 2em;
     }
 
     /*----- NAVIGATION ---*/
-    nav ul li {
-        width: auto;
-    }
 
     nav ul li a {
         transition: background .3s linear;
