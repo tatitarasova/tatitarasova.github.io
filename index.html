@@ -23,32 +23,44 @@
 <body>
 
     <div id="header-wrapper">
-        <header class="clearfix">
-            <hgroup>
-                <h1>Оксана Твердохлебова</h1>
-                <h2>Учитель фортепиано</h2>
-            </hgroup>
+        <header>
+            <h1>Оксана Твердохлебова</h1>
+            <h2>Учитель фортепиано</h2>
         </header>
-    </div>
-    
-    <div id="nav-wrapper">
-        <nav class="clearfix">
-            <ul>
-                <li><a href="teaching.html">Обучение</a>
-                </li>
-                <li><a href="about.html">Обо мне</a>
-                </li>
-                <li><a href="publishing.html">Статьи</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </div> <!-- end of the nav wrapper -->
+
+        <div class="navbar">
+            <div id="navbar-wrapper">
+                <nav class="clearfix">
+                    <ul>
+                        <li><a href="teaching.html">Обучение</a>
+                        </li>
+                        <li><a href="about.html">Обо мне</a>
+                        </li>
+                        <li><a href="publishing.html">Статьи</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class=dropdown-menu>
+                <button class="dropdown-button"><i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="teaching.html">Обучение</a>
+                    <a href="about.html">Обо мне</a>
+                    <a href="publishing.html">Статьи</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div> <!-- end of navbar -->
+    </div> <!-- end of header -->
 
     <div id="hero-image"></div>
 
     <main>
+        
         <article>
             <h1>Обучающие материалы</h1>
+            <i class="fas fa-cross"></i>
             <section class="columns-desktop">
                 <div class="teaching-material">
                     <image src="images/glasses-phone.jpg" alt="Teaching material 1" />
@@ -84,6 +96,7 @@
         </footer>
     </div> <!-- end of the footer wrapper -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </body>
 
 </html>

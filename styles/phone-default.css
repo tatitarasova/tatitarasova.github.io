@@ -1,11 +1,9 @@
 /* ---    COLOUR GUIDE
-
 GOLD: rgb(172, 140, 71);
 WHITE: rgb(226, 226, 226);
 BLACK: rgb(46, 46, 46);
        rgb(15, 15, 15);
        rgba(15, 15, 15, 0.74);
-
 ----*/
 
 /*-- apply a natural box layout model to all elements --*/
@@ -40,6 +38,9 @@ h1 {
 #header-wrapper {
     background-color: rgb(226, 226, 226);
     color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 header {
@@ -69,28 +70,64 @@ header h2 {
 
 /*-------- NAVIGATION BAR STYLES ------*/
 
-#nav-wrapper {
+#navbar-wrapper {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-button {
+    background-color: transparent;
+    border: 1px solid rgb(46, 46, 46);
+    color: rgb(226, 226, 226);;
+    padding: 12px 16px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: .2em;
+}
+
+.dropdown-menu:hover .dropdown-button {
     background-color: rgb(15, 15, 15);
 }
 
-nav ul li {
-    float: left;
-    width: 25%;
-}
-
-nav a {
-    display: block;
-    text-align: center;
+.dropdown-menu:hover  .fa-bars {
     color: rgb(226, 226, 226);
-    font-size: 1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: .6em 0;
-    border-right: 2.5px solid rgb(128, 128, 128);
 }
 
-nav ul li:last-child a {
-    border-right: none;
+.fa-bars {
+    color: rgb(46, 46, 46);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: rgb(226, 226, 226);
+    z-index: 1;
+    position: absolute;
+    min-width: 120px;
+    right: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(46, 46, 46);
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0.8em .5em;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(172, 140, 71);
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
 }
 
 /* --- MAIN STYLES ----*/
