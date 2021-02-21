@@ -1,0 +1,336 @@
+/*    COLOUR GUIDE
+PURPLE: rgb(158, 8, 168);
+WHITE: rgb(200, 200, 200);
+BLACK: rgb(46, 46, 46);
+       rgb(15, 15, 15); */
+
+:root {
+	--black-color: rgb(15, 15, 15);
+	--black-transparent-color: rgba(15, 15, 15, .6);
+	--overlay-color: rgba(15, 15, 15, .7);
+	--white-color: rgb(200, 200, 200);
+	--white-transparent-color: rgba(200, 200, 200, .5);
+	--purple-color: rgba(158, 8, 168, .4);
+}
+
+@font-face {
+	font-family: 'Nexa Script Thin';
+	src: url('../webfonts/nexa_script_thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/nexa_script_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/nexa_script_thin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/nexa_script_thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/nexa_script_thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/nexa_script_thin.svg#nexa_script_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../webfonts/segoe_ui.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui.svg#segoe_ui') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Gras';
+	src: url('../webfonts/segoe_ui_gras.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui_gras.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui_gras.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui_gras.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui_gras.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui_gras.svg#segoe_ui_gras') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Gras Italique';
+	src: url('../webfonts/segoe_ui_gras_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui_gras_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui_gras_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui_gras_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui_gras_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui_gras_italique.svg#segoe_ui_gras_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Italique';
+	src: url('../webfonts/segoe_ui_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui_italique.svg#segoe_ui_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Light';
+	src: url('../webfonts/segoe_ui_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui_light.svg#segoe_ui_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Semibold';
+	src: url('../webfonts/segoe_ui_semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../webfonts/segoe_ui_semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../webfonts/segoe_ui_semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../webfonts/segoe_ui_semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../webfonts/segoe_ui_semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../webfonts/segoe_ui_semibold.svg#segoe_ui_semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+/* BASIC STYLES */
+/* apply a natural box layout model to all elements */
+
+html {
+	font-size: 100%;
+	line-height: 1.5rem;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Garamond, Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* BEGIN COMMON NAVBAR STYLES */
+.nav-bar {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	line-height: 1.5rem;
+	overflow: hidden;
+	background-color: transparent;
+	/* grid positioning */
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	z-index: 10;
+	margin: 1rem 1rem;
+}
+
+.logo {
+	white-space: nowrap; /* prevent from collapsing on one line */
+}
+
+.toggle a,
+.logo a {
+	display: block;
+	text-decoration: none;
+	padding: .8rem;
+	color: var(--white-color);
+	letter-spacing: .1rem;
+}
+
+/* BEGIN LOGO STYLES */
+.logo-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 2rem 0 1rem 2rem;
+	cursor: pointer;
+}
+
+.logo-name {
+	position: relative;
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: .2rem;
+}
+
+/* Begin logo line styling */
+.logo-line {
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background-color: var(--white-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: .3rem;
+}
+
+/* end logo line styling */
+
+.logo-title {
+	font-weight: 600;
+	font-size: 1.5rem;
+	font-family: 'Nexa Script Thin', 'Segoe UI Italique', Tahoma, Verdana, sans-serif;
+	padding: 0;
+	margin-top: 0.2rem;
+}
+/* END LOGO STYLES */
+/* END COMMON NAVBAR STYLES */
+
+/* MENU PHONE SPECIFIC STYLES */
+/* SHOW MENU */
+.menu-wrapper .toggler:checked ~ .nav-menu {
+	visibility: visible;
+}
+
+.menu-wrapper .nav-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	visibility: hidden;
+	background-color: var(--black-color);
+}
+
+.menu-wrapper .nav-menu a {
+	transition: color 0.4s ease;
+	text-decoration: none;
+	color: inherit;
+	font-size: 2rem;
+	line-height: 1.5rem;
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+	padding: 2.5rem;
+}
+
+.menu-wrapper .nav-menu a:hover {
+	background-color: var(--purple-color);
+}
+
+
+.menu-wrapper .toggler {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 2;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+}
+
+.menu-wrapper .hamburger > div {
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .4s ease;
+}
+
+/* INSERT MUSICAL G CLEF */
+.menu-wrapper .hamburger > div::after {
+	content: "\01D11E";
+	font-size: 4rem;
+}
+
+/* TOGGLER ANIMATE */
+.menu-wrapper .toggler:checked + .hamburger > div::after {
+	content: "\01D107";
+	/* transform: scale(-1, 1); */
+}
+
+/* HOMEPAGE HERO */
+.hero-box {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	align-content: center;
+	justify-content: center;
+	align-items: start;
+	height: 100%;
+}
+
+.hero-image-box {
+	height: 100vh;
+	max-width: 100%;
+	display: grid;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	position: relative; /* newline */
+}
+
+.hero-image-box:after {
+	content: "";
+	background-color: var(--black-transparent-color);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+} /* to make .hero-text-box more visible */
+
+.hero-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero-text-box {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	align-self: center;
+	padding: 2rem;
+	z-index: 2;
+	text-align: left;
+	color: var(--white-color);
+}
+
+.hero-heading {
+	font-size: 1.6rem;
+	letter-spacing: .05rem;
+	font-family: 'Segoe UI Gras';
+}
+
+.hero-text {
+	font-size: 1.3rem;
+	margin-top: .5rem;
+}
+
+/* FOOTER STYLES */
+.footer-social {
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+}
+
+.footer-social a {
+	color: var(--white-color);
+	padding: 0 1rem;
+}
+
+.footer-copyright {
+	text-align: center;
+	padding-bottom: 3rem;
+}

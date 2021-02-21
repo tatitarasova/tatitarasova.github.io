@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1140px) {
+
+    .toggler {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .logo-box {
+        z-index: 1;
+    }
+    
+    .menu-wrapper .nav-menu {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: transparent;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .menu-wrapper .nav-menu li:last-of-type {
+        margin-right: 2rem;
+    }
+
+    .menu-wrapper .nav-menu a {
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 1.5rem;
+    }
+
+}
