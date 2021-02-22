@@ -1,0 +1,7 @@
+@media only screen and (min-width: 641px) {
+    /* -- HERO IMAGE STYLES ---------*/
+    #hero-image {
+        background-image: url("../images/oksana-hero-image-tablet.jpg");
+        height: 400px;
+    }
+}

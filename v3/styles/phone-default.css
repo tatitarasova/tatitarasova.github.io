@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'Nexa Script Thin';
+	src: url('../fonts/nexa_script_thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/nexa_script_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/nexa_script_thin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/nexa_script_thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/nexa_script_thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/nexa_script_thin.svg#nexa_script_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/segoe_ui.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui.svg#segoe_ui') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Gras';
+	src: url('../fonts/segoe_ui_gras.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_gras.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_gras.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_gras.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_gras.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_gras.svg#segoe_ui_gras') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Gras Italique';
+	src: url('../fonts/segoe_ui_gras_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_gras_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_gras_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_gras_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_gras_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_gras_italique.svg#segoe_ui_gras_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Italique';
+	src: url('../fonts/segoe_ui_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_italique.svg#segoe_ui_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Light';
+	src: url('../fonts/segoe_ui_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_light.svg#segoe_ui_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Segoe UI Semibold';
+	src: url('../fonts/segoe_ui_semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_semibold.svg#segoe_ui_semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+/*    COLOUR GUIDE
+PURPLE: rgb(158, 8, 168);
+WHITE: rgb(200, 200, 200);
+BLACK: rgb(46, 46, 46);
+       rgb(15, 15, 15); */
+
+:root {
+    --black-color: rgb(15, 15, 15);
+    --black-transparent-color: rgba(15, 15, 15, .6);
+    --overlay-color: rgba(15, 15, 15, .7);
+    --white-color: rgb(200, 200, 200);
+    --white-transparent-color: rgba(200, 200, 200, .5);
+    --purple-color: rgba(158, 8, 168, .4);
+}
+
+html {
+    font-size: 100%; /* TODO: select the starting font size 16px? */
+    line-height: 1.5rem;
+    font-family: 'Segoe UI', Garamond, Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px; /* in viewports above 1200px, the body remains at 1200px and centers itself in the available space */
+	background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 2rem;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/* NAV STYLES */
+.nav-wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+/* NAV */
+
+/* BEGIN LOGO STYLES */
+.logo a {
+	display: block;
+	text-decoration: none;
+	color: var(--white-color);
+	letter-spacing: .1rem;
+}
+
+.logo-box {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: space-between;
+    cursor: pointer;
+    font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.logo-line {
+    height: 1px;
+    background-color: var(--white-color);
+    width: 100%;
+	margin-top: .3rem;
+}
+
+.logo-title {
+	font-family: 'Nexa Script Thin', 'Segoe UI Italique', Tahoma, Verdana, sans-serif;
+	padding: 0;
+	margin-top: 0.2rem;
+}
+/* END LOGO STYLES */
+
+/* HERO IMAGE STYLES */
+#hero-image {
+    background-image: url("../images/oksana-hero-image-phone.jpg");
+    background-repeat: no-repeat;
+    background-color: inherit;
+    height: 200px;
+}
+/* END HERO IMAGE STYLES
+
+/* HERO TEXT STYLES */
+.hero-text-box {
+	padding: 2rem;
+	text-align: left;
+	color: var(--white-color);
+}
+
+.hero-heading {
+	font-size: 1.6rem;
+	letter-spacing: .05rem;
+	font-family: 'Segoe UI Gras';
+}
+
+.hero-text {
+	font-size: 1.3rem;
+	margin-top: .5rem;
+}
+/* END HERO TEXT STYLES */
