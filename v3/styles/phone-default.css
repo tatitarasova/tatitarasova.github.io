@@ -145,6 +145,14 @@ body {
 }
 /* END LOGO STYLES */
 
+/* MENU STYLES */
+/* INSERT TOGGLER ICON */
+.menu-wrapper .toggler-icon > div::after {
+    background-image: url('../images/keyboard-piano.svg');
+    width: 100px;
+}
+/* END MENY STYLES */
+
 /* HERO IMAGE STYLES */
 #hero-image {
     background-image: url("../images/oksana-hero-image-phone.jpg");
