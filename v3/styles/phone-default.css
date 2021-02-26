@@ -97,6 +97,7 @@ body {
     max-width: 1200px; /* in viewports above 1200px, the body remains at 1200px and centers itself in the available space */
 	background-color: var(--black-color);
     color: var(--white-color);
+    transition: background-color .5s;
 }
 
 *, *::before, *::after {
@@ -115,16 +116,20 @@ body {
 }
 /* END PAGE WRAPPER STYLES */
 
-/* NAV STYLES */
-.nav-wrapper {
+/* HEADER STYLES */
+.header {
     display: flex;
-    border: 2px dashed orange;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
-/* NAV */
+/* END HEADER STYLES */
 
-/* BEGIN LOGO STYLES */
+/* LOGO STYLES */
+.logo {
+    border: 1px dashed purple;
+}
+
 .logo a {
 	display: block;
 	text-decoration: none;
@@ -157,11 +162,85 @@ body {
 /* END LOGO STYLES */
 
 /* MENU STYLES */
-/* INSERT TOGGLER ICON */
-.menu-wrapper .toggler-icon > div::after {
-    content: url('../images/keyboard-piano.svg');
+.menu { /* flex item of nav-wrapper */
+    border: 1px dashed purple;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    border: 0.5px double yellowgreen;
 }
-/* END MENY STYLES */
+
+/* TOGGLER STYLES */
+.checkbox-wrapper {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 2%; */
+}
+
+.checkbox-toggler {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+svg {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+}
+
+svg .piano-keyboard {
+    fill: var(--white-color);
+    cursor: pointer;
+}
+
+/* if inline svg is not supported */
+.fallback { 
+    display: none;
+    /* Make sure it's the same size as the SVG takes up */
+  }
+
+.no-svg .fallback { 
+    background-image: url('../images/keyboard-piano.svg'); 
+}
+/* END TOGGLER STYLES */
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border: 0.5px double yellowgreen;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--black-color);
+    margin-right: -250px;
+    transition: .5s;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    display: block;
+    border-radius: 5px;
+    padding: 2.5rem;
+    border: 1px solid darkturquoise;
+}
+/* END MENU STYLES */
 
 /* HERO BOX STYLES */
 .hero-box {
@@ -169,7 +248,7 @@ body {
 }
 
 /* HERO IMAGE STYLES */
-#hero-image {
+.hero-image {
     background-image: url("../images/oksana-hero-image-phone.jpg");
     background-repeat: no-repeat;
     background-color: inherit;
@@ -200,5 +279,6 @@ body {
 /* MAIN STYLES */
 main {
     border: 2px dashed orange;
+    transition: .5s;
 }
 /* END MAIN STYLES */
