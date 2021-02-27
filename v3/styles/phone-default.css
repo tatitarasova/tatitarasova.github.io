@@ -106,6 +106,7 @@ body {
 
 /* PAGE WRAPPER STYLES */
 .page-wrapper {
+    position: relative;
     display: grid;
     border: 3px solid orange;
     grid-template-columns: 1fr;
@@ -113,6 +114,12 @@ body {
     column-gap: 2rem;
     row-gap: 2rem;
     padding: 2% 6% 2% 6%;
+    transition: .5s;
+}
+
+.move-left {
+    margin-right: 300px;
+    margin-left: -300px;
 }
 /* END PAGE WRAPPER STYLES */
 
@@ -175,10 +182,6 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 50px 1fr;
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    margin-top: 2%; */
 }
 
 .checkbox-toggler {
@@ -221,12 +224,12 @@ svg .piano-keyboard {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 250px;
+    width: 300px;
     position: fixed;
     top: 0;
     right: 0;
     background-color: var(--black-color);
-    margin-right: -250px;
+    margin-right: -300px;
     transition: .5s;
 }
 

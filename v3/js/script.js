@@ -1,26 +1,23 @@
-const checkbox = document.getElementById('checkbox-toggler');
-const main = document.getElementById('main');
+const checkbox = document.getElementById('checkboxToggler');
 
 function openMenu() {
     document.getElementById('menu').style.marginRight = '0';
-    // document.getElementById('main').style.marginLeft = '-250px';
-    document.body.style.backgroundColor = 'rgba(0, 0, 0, .7)';
 }
 
 function closeMenu() {
-    document.getElementById('menu').style.marginRight = '-250px';
-    // document.getElementById('main').style.marginLeft = '0';
-    document.body.style.backgroundColor = 'rgb(15, 15, 15)';
+    document.getElementById('menu').style.marginRight = '-300px';
 }
 
 checkbox.addEventListener('change', (event) => {
     if (event.currentTarget.checked) {
         openMenu();
+        pageWrapper.classList.toggle('move-left', true);
     } else {
         closeMenu();
+        pageWrapper.classList.toggle('move-left', false);
     }
 })
 
-main.addEventListener('onclick', (event) => {
+main.addEventListener('click', (event) => {
     closeMenu();
 }) 
