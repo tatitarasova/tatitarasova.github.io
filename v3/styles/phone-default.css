@@ -180,8 +180,8 @@ body {
 /* TOGGLER STYLES */
 .checkbox-wrapper {
     display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 40px 1fr;
 }
 
 .checkbox-toggler {
@@ -245,6 +245,13 @@ svg .piano-keyboard {
 }
 /* END MENU STYLES */
 
+/* MAIN STYLES */
+main {
+    border: 2px dashed orange;
+    transition: .5s;
+}
+/* END MAIN STYLES */
+
 /* HERO BOX STYLES */
 .hero-box {
     border: 2px dashed orange;
@@ -261,27 +268,22 @@ svg .piano-keyboard {
 
 /* HERO TEXT STYLES */
 .hero-text-box {
-	padding: 2rem;
-	text-align: left;
-	color: var(--white-color);
+	padding: 1rem;
+    text-align: left;
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
 .hero-heading {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	letter-spacing: .05rem;
-	font-family: 'Segoe UI Gras';
+    font-family: 'Segoe UI Gras';
+    margin: 0;
 }
 
 .hero-text {
-	font-size: 1.3rem;
-	margin-top: .5rem;
+	font-size: 1rem;
+    margin: .5rem 0 0 0;
 }
 /* END HERO TEXT STYLES */
 /* END HERO BOX STYLES */
-
-/* MAIN STYLES */
-main {
-    border: 2px dashed orange;
-    transition: .5s;
-}
-/* END MAIN STYLES */
