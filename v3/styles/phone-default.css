@@ -135,6 +135,7 @@ body {
 /* LOGO STYLES */
 .logo {
     border: 1px dashed purple;
+    z-index: 2;
 }
 
 .logo a {
@@ -151,7 +152,7 @@ body {
 	justify-content: space-between;
     cursor: pointer;
     font-weight: 700;
-	font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .logo-line {
@@ -175,20 +176,20 @@ body {
     grid-template-rows: 40px 1fr;
 }
 
-.fix-position {
+/* .fix-position {
     position: fixed;
     top: 2rem;
     right: 3rem;
     z-index: 2;
-}
+} */
 
 .checkbox-toggler {
     grid-area: 1 / 1 / 2 / 2;
     width: 100%;
     height: 100%;
-    z-index: 2;
     opacity: 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 svg {
