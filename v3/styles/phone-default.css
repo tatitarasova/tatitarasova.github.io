@@ -113,7 +113,7 @@ body {
     grid-template-rows: 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
-    padding: 2% 6% 2% 6%;
+    padding: 2rem 4rem;
     transition: .5s;
 }
 
@@ -168,21 +168,18 @@ body {
 }
 /* END LOGO STYLES */
 
-/* MENU STYLES */
-.menu { /* flex item of nav-wrapper */
-    border: 1px dashed purple;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 50px 1fr;
-    border: 0.5px double yellowgreen;
-}
-
 /* TOGGLER STYLES */
-
 .checkbox-wrapper {
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-template-rows: 40px 1fr;
+}
+
+.fix-position {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 2;
 }
 
 .checkbox-toggler {
@@ -215,19 +212,20 @@ svg .piano-keyboard {
 }
 /* END TOGGLER STYLES */
 
-.nav-menu{
+/* MENU STYLES */
+.nav-menu { /* flex item of nav-wrapper */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     list-style: none;
-    border: 0.5px double yellowgreen;
+    border: 1px dashed purple;
     margin: 0;
     padding: 0;
-    height: 70%;
+    height: 100%;
     width: 300px;
     position: fixed;
-    top: 5rem;
+    top: 0;
     right: 0;
     background-color: var(--black-color);
     margin-right: -300px;
