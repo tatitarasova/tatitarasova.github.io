@@ -178,6 +178,7 @@ body {
 }
 
 /* TOGGLER STYLES */
+
 .checkbox-wrapper {
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -270,8 +271,7 @@ main {
 .hero-text-box {
 	padding: 1rem;
     text-align: left;
-    background-color: var(--white-color);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .hero-heading {

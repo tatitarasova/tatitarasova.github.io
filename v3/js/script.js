@@ -1,11 +1,15 @@
+const menu = document.getElementById('menu');
 const checkbox = document.getElementById('checkboxToggler');
+const checkboxWrapper = document.getElementById('checkboxWrapper');
 
 function openMenu() {
-    document.getElementById('menu').style.marginRight = '0';
+    menu.style.marginRight = '0';
+    checkboxWrapper.style.display = "none";
 }
 
 function closeMenu() {
-    document.getElementById('menu').style.marginRight = '-300px';
+    menu.style.marginRight = '-300px';
+    checkboxWrapper.style.display = "initial";
 }
 
 checkbox.addEventListener('change', (event) => {
