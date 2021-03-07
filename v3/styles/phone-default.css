@@ -254,8 +254,8 @@ main {
 /* END MAIN STYLES */
 
 /* HERO BOX STYLES */
-.hero-box {
-    border: 2px dashed orange;
+.hero-box, article {
+    border: 2px dashed turquoise;
 }
 
 /* HERO IMAGE STYLES */
@@ -287,3 +287,10 @@ main {
 }
 /* END HERO TEXT STYLES */
 /* END HERO BOX STYLES */
+
+/* FOOTER STYLES */
+footer {
+    border: 2px dashed orange;
+    transition: .5s;
+}
+/* END FOOTER STYLES */
