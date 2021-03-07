@@ -113,7 +113,7 @@ body {
     grid-template-rows: 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
     transition: .5s;
 }
 
@@ -129,6 +129,7 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    height: 5rem;
 }
 /* END HEADER STYLES */
 
@@ -223,10 +224,10 @@ svg .piano-keyboard {
     border: 1px dashed purple;
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: calc(100% - 8rem);
     width: 300px;
     position: fixed;
-    top: 0;
+    top: 8rem; /* 1 rem (page-wrapper top padding) + 5 rem (header height) + 2 rem (page-wrapper grid row gap) = 8 rem, not to overlay the header */
     right: 0;
     background-color: var(--black-color);
     margin-right: -300px;
