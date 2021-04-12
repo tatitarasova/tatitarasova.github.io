@@ -115,6 +115,7 @@ body {
     row-gap: 2rem;
     padding: 1rem 2rem;
     transition: .5s;
+    height: 100vh;
 }
 
 .move-left {
