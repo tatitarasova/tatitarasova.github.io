@@ -115,7 +115,6 @@ body {
     row-gap: 2rem;
     padding: 1rem 2rem;
     transition: .5s;
-    height: 100vh;
 }
 
 .move-left {
@@ -295,3 +294,7 @@ footer {
     transition: .5s;
 }
 /* END FOOTER STYLES */
+
+/* ABOUT PAGE STYLES */
+
+/* END ABOUT PAGE STYLES */
